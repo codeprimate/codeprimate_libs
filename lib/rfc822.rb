@@ -30,7 +30,7 @@ module RFC822
     end
     
     def self.valid_email_address?(email_str)
-      return not email_str.match(EmailAddressRE).nil?
+      return (not email_str.match(EmailAddressRE).nil?)
     end
 
     def valid_email_address?(email_str)
